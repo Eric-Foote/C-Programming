@@ -18,6 +18,7 @@ Hint: Don't forget to check for bad values like null/undefined
 
 #include <stdbool.h>
 #include <stddef.h>
+#include <stdio.h>
 
 size_t count_sheep(const bool *sheep, size_t count);
 
@@ -34,7 +35,7 @@ void main()
     };
     // I am going to use size_t count as the size of the array given 
     size_t count  = sizeof(sheep);
-    size_t countOfSheep = count_sheep(&sheep, count);
+    size_t countOfSheep = count_sheep(sheep, count);
     printf("The size of the array is %zd\n", countOfSheep);
 }
 
