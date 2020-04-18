@@ -34,7 +34,7 @@ void main()
       false, false, true,  true
     };
     // I am going to use size_t count as the size of the array given 
-    size_t count  = sizeof(sheep);
+    size_t count = sizeof(sheep) / sizeof(sheep[0]);
     size_t countOfSheep = count_sheep(sheep, count);
     printf("The size of the array is %zd\n", countOfSheep);
 }
