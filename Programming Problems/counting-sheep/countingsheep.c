@@ -38,7 +38,12 @@ void main()
     printf("The size of the array is %zd\n", countOfSheep);
 }
 
-size_t count_sheep(const bool *sheep, size_t count)
+size_t count_sheep(const bool *sheep, size_t count) 
 {
-    
+    size_t counter;
+    for(int i = 0; i < (int)count; i++){
+        if(sheep[i])
+            counter++;
+    }
+    return counter;
 }
