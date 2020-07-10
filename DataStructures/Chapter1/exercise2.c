@@ -10,7 +10,7 @@ int main()
 	{
 		if(i%2 == 0){
 			counter++;
-			sum += i;
+			sum=+i;
 		}
 			
 	}
