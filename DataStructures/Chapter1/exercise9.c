@@ -14,14 +14,16 @@ int main()
 	int quantity;
 	float price;
 	int amount;
+	scanf("%s", item);
+        scanf("%d", &quantity);
+        scanf("%f", &price);
+        scanf("%d", &amount);
 	printf("***************************** BILL ****************************");
 	printf("\nItem \t\t Quantity \t\t Price \t\t Amount");
 	printf("\n---------------------------------------------------------------");
 	printf("\n---------------------------------------------------------------");
-	scanf("%s", item);
-	scanf("%d", &quantity);
-	scanf("%f", &price);
-	scanf("%d", &amount);
-	
+	printf("\n%s \t\t %d \t\t %f \t\t %d", item, quantity, price, amount);
+	printf("\n \tTotal Amount to be paid");
+	printf("\n---------------------------------------------------------------");
 	return 0;
 }
